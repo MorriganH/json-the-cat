@@ -20,7 +20,7 @@ request(`https://api.thecatapi.com/v1/breeds/search?q=${query}`, (error, respons
   // parse data into usable format
   const data = JSON.parse(body);
   
-  // if data returned empty, breed must not exist. 
+  // if data returned empty, breed must not exist.
   if (data.length === 0) {
     console.log("Breed not found");
     return;
